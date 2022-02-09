@@ -46,10 +46,6 @@ body {
   text-align: left;
   vertical-align: top;
 }
-.section {
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
-}
 .conteiner {
   width: 1170px;
   margin-left: 15px;
@@ -60,7 +56,6 @@ body {
   padding-bottom: 94px;
 
   outline: 1px solid red;
-  background-color: skyblue;
 }
 
 /* ==================== */
@@ -70,6 +65,8 @@ body {
   width: 1170px;
   margin-left: 15px;
   margin-right: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .header .list {
   margin-top: 0px;
@@ -192,6 +189,7 @@ body {
   cursor: pointer;
 }
 .section-our-works .button {
+  padding: 6px 22px;
   color: var(--title-text-color);
   background-color: var(--bgc-accent-color);
 
@@ -211,6 +209,21 @@ body {
 .section-our-works .button.current {
   color: var(--bgc-primary-color);
   background-color: var(--accent-text-color);
+}
+.section-our-works .button.all {
+  min-width: 86px;
+}
+.section-our-works .button.web-sites {
+  min-width: 128px;
+}
+.section-our-works .button.apps {
+  min-width: 145px;
+}
+.section-our-works .button.design {
+  min-width: 103px;
+}
+.section-our-works .button.marketing {
+  min-width: 130px;
 }
 
 /* =======Section Our advantages =======*/
@@ -248,8 +261,8 @@ body {
 .our-team .list > li {
   background-color: var(--bgc-primary-color);
 }
-/* .our-team .subtitle {
-  margin-bottom: 10px; */
+.our-team .subtitle {
+  /* margin-bottom: 10px; */
 
   font-weight: 500;
   font-size: 16px;
@@ -270,9 +283,6 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-/* .our-team .subtitle {
-  margin-bottom: 10px;
-} */
 .our-team img {
   margin-bottom: 30px;
 }
@@ -310,6 +320,10 @@ body {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.footer .conteiner {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
 /* =======Portfolio =======*/
 
 .section-our-works .title {
@@ -329,4 +343,19 @@ body {
 .link-our-works {
   color: inherit;
   text-decoration: none;
+}
+.section-our-works img {
+  margin-bottom: 20px;
+}
+.section-our-works h2 {
+  margin-bottom: 4px;
+}
+.section-our-works .text {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+.section-our-works .list {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
