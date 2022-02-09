@@ -335,6 +335,10 @@ body {
   letter-spacing: 0.06em;
 }
 .section-our-works .text {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 1.88;
   text-align: left;
@@ -349,13 +353,4 @@ body {
 }
 .section-our-works h2 {
   margin-bottom: 4px;
-}
-.section-our-works .text {
-  display: inline-block;
-  margin-top: 0px;
-  margin-bottom: 20px;
-}
-.section-our-works .list {
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
