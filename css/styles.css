@@ -18,6 +18,20 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+/* ======hidden====== */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .list {
   list-style: none;
 }
@@ -42,8 +56,6 @@ body {
   color: var(--title-text-color);
 
   font-weight: 700;
-  /* ????????????????? */
-  /* font-size: 14px; */
   line-height: 1.14;
   text-align: left;
   vertical-align: top;
@@ -54,8 +66,6 @@ body {
   margin-right: 15px;
   padding-top: 94px;
   padding-bottom: 94px;
-
-  /* outline: 1px solid red; */
 }
 
 /* ==================== */
@@ -314,26 +324,14 @@ body {
 }
 
 /* =======Section Our team======= */
-.our-team .conteiner {
-  /* padding-left: 215px;
-  padding-right: 215px; */
-}
 .our-team .list {
   display: flex;
-  justify-content: space-between;
-  /* flex-wrap: wrap; */
 }
 .our-team .item:not(:last-child) {
   margin-right: 30px;
 }
 .our-team .img {
   display: block;
-}
-/* .our-team .item:first-child {
-  margin-left: 215px;
-} */
-.our-team .item:last-child {
-  margin-right: 215px;
 }
 
 .section.our-team {
@@ -343,8 +341,6 @@ body {
   background-color: var(--bgc-primary-color);
 }
 .our-team .subtitle {
-  /* margin-bottom: 10px; */
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -427,39 +423,28 @@ body {
   padding-bottom: 0px;
 }
 /* =======Portfolio =======*/
-.list-examples .img {
-  display: block;
-}
-.list-examples .item {
-  border: 1px solid #eeeeee;
-}
-.list-buttons {
-  list-style: none;
-}
 .work-examples .list-buttons {
   display: flex;
   justify-content: center;
   margin-top: 0px;
   margin-bottom: 50px;
 }
-.list-examples {
+
+.list-buttons .item:not(:last-child) {
+  margin-right: 8px;
+}
+.list-buttons {
   list-style: none;
-  margin-top: 0px;
-  margin-bottom: 0px;
+}
+.list-examples .img {
+  display: block;
 }
 
-.work-examples .list-examples {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  /* align-content: center; */
-  /* margin-top: 0px;
-  margin-bottom: 30px; */
-}
-.list-examples .item:nth-last-child(-n + 3) {
-  margin-bottom: 30px;
-}
 .work-examples .title {
+  margin-bottom: 4px;
+  margin-left: 24px;
+  margin-right: 24px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -467,27 +452,38 @@ body {
   vertical-align: top;
   letter-spacing: 0.06em;
 }
-.list-buttons .item:not(:last-child) {
-  margin-right: 8px;
-}
 .work-examples .text {
-  display: inline-block;
+  display: block;
   margin-top: 0px;
   margin-bottom: 20px;
+  margin-left: 24px;
+  margin-right: 24px;
 
   font-size: 16px;
   line-height: 1.88;
   text-align: left;
-  vertical-align: top;
 }
-.link-work-examples {
+.list-examples {
+  list-style: none;
+}
+.list-examples .link-work-examples {
   display: block;
   color: inherit;
   text-decoration: none;
 }
-.work-examples img {
-  margin-bottom: 20px;
+.work-examples .list-examples {
+  display: flex;
+  flex-wrap: wrap;
 }
-.work-examples h2 {
-  margin-bottom: 4px;
+
+.list-examples .item {
+  width: 370px;
+  border: 1px solid #eeeeee;
+}
+
+.list-examples .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+.list-examples .item:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
 }
