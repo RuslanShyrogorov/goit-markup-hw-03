@@ -7,9 +7,6 @@
   --bgc-accent-color: #f5f4fa;
   --hover-buttom-primary: #188ce8;
 }
-ul {
-  padding-left: 0px;
-}
 body {
   background-color: var(--bgc-primary-color);
   color: var(--primary-text-color);
@@ -30,6 +27,17 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+/* ==================== */
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 .list {
@@ -60,28 +68,26 @@ body {
   text-align: left;
   vertical-align: top;
 }
-.conteiner {
-  width: 1200px;
-  margin-left: 15px;
-  margin-right: 15px;
+.section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ==================== */
 
 /* =======Header======= */
-.header .conteiner {
-  width: 1170px;
-  margin-left: 15px;
-  margin-right: 15px;
+.header.section {
   padding-top: 0px;
   padding-bottom: 0px;
   border-bottom: 1px solid #ececec;
-}
-.header .list {
-  margin-top: 0px;
-  margin-bottom: 0px;
 }
 /* =======Logo======= */
 .logo {
@@ -95,6 +101,10 @@ body {
   line-height: 1.19;
   text-align: left;
   vertical-align: Top;
+}
+.sub-nav .logo {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .logo:hover,
 .logo:focus {
@@ -131,8 +141,6 @@ body {
 }
 .sub-nav .logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 
 .site-nav-list {
@@ -190,11 +198,10 @@ body {
 }
 
 /* =======section hero======= */
-.section-hero .conteiner {
+.hero.section {
   padding-top: 200px;
   padding-bottom: 200px;
-}
-.section-hero {
+
   background-color: var(--bgc-hero-color);
   text-align: center;
 }
@@ -262,6 +269,8 @@ body {
 .work-examples .button.current {
   color: var(--bgc-primary-color);
   background-color: var(--accent-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .work-examples .button.all {
   min-width: 86px;
@@ -282,9 +291,12 @@ body {
 /* =======Section Our advantages =======*/
 .our-advantages .list {
   display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-.our-advantages .item:not(:last-child) {
-  margin-right: 30px;
+.our-advantages .subtitle {
+  font-size: 14px;
+  text-transform: uppercase;
 }
 .our-advantages .text {
   margin-top: 0px;
@@ -294,51 +306,55 @@ body {
   text-align: left;
   vertical-align: top;
 }
-.our-advantages .subtitle {
-  font-size: 14px;
-  text-transform: uppercase;
-}
-.our-advantages .list {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-/* =======What we do======= */
-.what-we-do .list {
-  display: flex;
-}
-.what-we-do .item:not(:last-child) {
+
+.our-advantages .item:not(:last-child) {
   margin-right: 30px;
 }
-.what-we-do .img {
-  display: block;
+/* =======What we do======= */
+.what-we-do.section {
+  padding-top: 0px;
 }
 .what-we-do .title {
   margin-bottom: 50px;
 }
+
 .what-we-do .list {
+  display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.what-we-do .conteiner {
-  padding-top: 0px;
+.what-we-do .item:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* =======Section Our team======= */
-.our-team .list {
-  display: flex;
-}
-.our-team .item:not(:last-child) {
-  margin-right: 30px;
-}
-.our-team .img {
-  display: block;
-}
-
-.section.our-team {
+.our-team.section {
   background-color: var(--bgc-accent-color);
 }
-.our-team .list > li {
+
+.our-team .title {
+  margin-bottom: 50px;
+  /* margin-left: 60px;
+  margin-right: 60px; */
+}
+.our-team .team.list {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.our-team .card-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.our-team .card-footer {
+  padding: 30px 0px;
   background-color: var(--bgc-primary-color);
+  border-radius: 0px 0px 4px 4px;
+}
+.our-team .card-item {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .our-team .subtitle {
   font-weight: 500;
@@ -348,37 +364,21 @@ body {
   vertical-align: top;
 }
 .our-team .text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   vertical-align: top;
 }
-.our-team .title {
-  margin-bottom: 50px;
-}
-.our-team .list {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.our-team img {
-  margin-bottom: 30px;
-}
-.our-team .text {
-  margin-top: 0px;
-  margin-bottom: 30px;
-}
 /* =======footer======= */
-.footer .conteiner {
-  padding-top: 0px;
-  padding-bottom: 0px;
+.footer.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer .link {
   display: inline-block;
-}
-.footer .logo {
-  display: inline-block;
-  margin-top: 60px;
-  margin-bottom: 20px;
 }
 .footer .list {
   display: flex;
@@ -388,13 +388,15 @@ body {
   margin-bottom: 9px;
 }
 .footer .item:last-child {
-  margin-bottom: 60px;
+  margin-bottom: 0px;
 }
 .footer {
   background-color: var(--bgc-hero-color);
 }
 .footer .logo {
+  display: block;
   color: var(--bgc-primary-color);
+  margin-bottom: 20px;
 }
 .footer .addres {
   color: var(--bgc-primary-color);
@@ -414,14 +416,6 @@ body {
   text-align: left;
   vertical-align: top;
 }
-.footer .list {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-.footer .conteiner {
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
 /* =======Portfolio =======*/
 .work-examples .list-buttons {
   display: flex;
@@ -436,14 +430,9 @@ body {
 .list-buttons {
   list-style: none;
 }
-.list-examples .img {
-  display: block;
-}
 
 .work-examples .title {
   margin-bottom: 4px;
-  margin-left: 24px;
-  margin-right: 24px;
 
   font-weight: 700;
   font-size: 18px;
@@ -453,15 +442,17 @@ body {
   letter-spacing: 0.06em;
 }
 .work-examples .text {
+  margin-top: 0;
+  margin-bottom: 0;
   display: block;
-  margin-top: 0px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-  margin-right: 24px;
 
   font-size: 16px;
   line-height: 1.88;
   text-align: left;
+}
+.list-examples .footer-item {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 .list-examples {
   list-style: none;
@@ -474,11 +465,6 @@ body {
 .work-examples .list-examples {
   display: flex;
   flex-wrap: wrap;
-}
-
-.list-examples .item {
-  width: 370px;
-  border: 1px solid #eeeeee;
 }
 
 .list-examples .item:not(:nth-last-child(-n + 3)) {

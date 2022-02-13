@@ -16,11 +16,11 @@
 </head>
 
 <body class="body">
-    <header class="header">
-        <div class="conteiner main-nav">
+    <header class="header section">
+        <div class="main-nav conteiner">
             <nav class="sub-nav">
                 <a lang="en" href="./index.html" class="logo item"><span class="logo-blu">Web</span>Studio</a>
-                <ul class="list site-nav-list item">
+                <ul class="list site-nav-list">
                     <li class="item">
                         <a href="./index.html" class="link current">Студия</a>
                     </li>
@@ -45,7 +45,7 @@
     <main>
         <!-- Секция герой -->
         <!-- <div class="conteiner"> -->
-            <section class="section-hero">
+            <section class="hero section">
                 <div class="conteiner">
                     <h1 class="section-hero-title">Эффективные решения для вашего бизнеса</h1>
                     <button type="button" class="button hero">Заказать услугу</button>
@@ -53,7 +53,7 @@
             </section>
         <!-- </div> -->
         <!-- Секция Наши преимущества -->
-        <section class="section our-advantages">
+        <section class="our-advantages section">
             <div class="conteiner">
                 <h2 class="title visually-hidden">Наши преимущества</h2>
                 <ul class="list">
@@ -78,53 +78,62 @@
             </div>
         </section>
         <!-- Секция Чем мы занимаемся -->
-        <section class="section what-we-do">
+        <section class="what-we-do section">
             <div class="conteiner">
                 <h2 class="title">Чем мы занимаемся</h2>
                 <ul class="list">
                     <li class="item">
-                        <img class="img" src="./imges/about_img.jpg" alt="Работа за компьютером" width="370"/>
+                        <img src="./imges/about_img.jpg" alt="Работа за компьютером" width="370"/>
                     </li>
                     <li class="item">
-                        <img class="img" src="./imges/about_img-2.jpg" alt="Работа за ноутбуком" width="370"/>
+                        <img src="./imges/about_img-2.jpg" alt="Работа за ноутбуком" width="370"/>
                     </li>
                     <li class="item">
-                        <img class="img" src="./imges/about_img-3.jpg" alt="Работа на планшете" width="370"/>
+                        <img src="./imges/about_img-3.jpg" alt="Работа на планшете" width="370"/>
                     </li>
                 </ul>
             </div>
             
         </section>
         <!-- Секция наша команда -->
-        <section class="section our-team">
+        <section class="our-team section">
             <div class="conteiner">
                 <h2 class="title">Наша команда</h2>
-                <ul class="list">
-                    <li class="item">
-                        <img class="img" src="./imges/team_img1.jpg" alt="Игорь Демьяненко" width="270"/>
-                        <h3 class="subtitle">Игорь Демьяненко</h3>
-                        <p lang="en" class="text">Product Designer</p>
+                <ul class="team list">
+                    <li class="card-item">
+                        <img src="./imges/team_img1.jpg" alt="Игорь Демьяненко" width="270"/>
+                        <div class="card-footer">
+                            <h3 class="subtitle">Игорь Демьяненко</h3>
+                            <p lang="en" class="text">Product Designer</p>
+                        </div>
                     </li>
-                    <li class="item">
-                        <img class="img" src="./imges/team_img2.jpg" alt="Ольга Репина" width="270"/>
-                        <h3 class="subtitle">Ольга Репина</h3>
-                        <p lang="en" class="text">Frontend Developer</p>
+                    <li class="card-item">
+                        <img src="./imges/team_img2.jpg" alt="Ольга Репина" width="270"/>
+                        <div class="card-footer">
+                            <h3 class="subtitle">Ольга Репина</h3>
+                            <p lang="en" class="text">Frontend Developer</p>
+                        </div>
                     </li>
-                    <li class="item">
-                        <img class="img" src="./imges/team_img3.jpg" alt="Николай Тарасов" width="270"/>
-                        <h3 class="subtitle">Николай Тарасов</h3>
-                        <p lang="en" class="text">Marketing</p>
+                    <li class="card-item">
+                        <img src="./imges/team_img3.jpg" alt="Николай Тарасов" width="270"/>
+                        <div class="card-footer">
+                            <h3 class="subtitle">Николай Тарасов</h3>
+                            <p lang="en" class="text">Marketing</p>
+                        </div>
                     </li>
-                    <li class="item">
-                        <img class="img" src="./imges/team_img4.jpg" alt="Михаил Ермаков" width="270"/>
-                        <h3 class="subtitle">Михаил Ермаков</h3>
-                        <p lang="en" class="text">UI Designer</p>
+                    <li class="card-item">
+                        <img src="./imges/team_img4.jpg" alt="Михаил Ермаков" width="270"/>
+                        <div class="card-footer">
+                            <h3 class="subtitle">Михаил Ермаков</h3>
+                            <p lang="en" class="text">UI Designer</p>
+                        </div>
+                        
                     </li>
                 </ul>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer section">
         <div class="conteiner">
             <a href="./index.html" class="logo"><span class="logo-blu">Web</span>Studio</a>
             <address id="contacts">
