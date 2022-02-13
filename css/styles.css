@@ -377,13 +377,7 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer .link {
-  display: inline-block;
-}
-.footer .list {
-  display: flex;
-  flex-direction: column;
-}
+
 .footer .item:not(:last-child) {
   margin-bottom: 9px;
 }
@@ -409,12 +403,12 @@ ul {
   color: var(--accent-text-color);
 }
 .footer .link {
+  display: block;
   text-decoration: none;
 
   font-style: normal;
   line-height: 1.71;
   text-align: left;
-  vertical-align: top;
 }
 /* =======Portfolio =======*/
 .work-examples .list-buttons {
