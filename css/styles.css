@@ -206,6 +206,9 @@ ul {
   text-align: center;
 }
 .section-hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 0px;
   margin-bottom: 30px;
 
@@ -214,8 +217,7 @@ ul {
   text-transform: uppercase;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.93;
-  vertical-align: top;
+  line-height: 1.36;
   letter-spacing: 0.06em;
 }
 
@@ -293,7 +295,13 @@ ul {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: -30px;
 }
+.our-advantages .item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-left: 30px;
+}
+
 .our-advantages .subtitle {
   font-size: 14px;
   text-transform: uppercase;
@@ -305,10 +313,6 @@ ul {
   line-height: 1.71;
   text-align: left;
   vertical-align: top;
-}
-
-.our-advantages .item:not(:last-child) {
-  margin-right: 30px;
 }
 /* =======What we do======= */
 .what-we-do.section {
@@ -322,9 +326,11 @@ ul {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: -30px;
 }
-.what-we-do .item:not(:last-child) {
-  margin-right: 30px;
+.what-we-do .item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
 }
 
 /* =======Section Our team======= */
@@ -334,16 +340,16 @@ ul {
 
 .our-team .title {
   margin-bottom: 50px;
-  /* margin-left: 60px;
-  margin-right: 60px; */
 }
 .our-team .team.list {
   display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
+  margin-left: -30px;
 }
-.our-team .card-item:not(:last-child) {
-  margin-right: 30px;
+.our-team .card-item {
+  flex-basis: calc((100% - 4 * 30px) / 4);
+  margin-left: 30px;
 }
 
 .our-team .card-footer {
@@ -446,7 +452,9 @@ ul {
 }
 .list-examples .footer-item {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .list-examples {
   list-style: none;
@@ -459,11 +467,11 @@ ul {
 .work-examples .list-examples {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
-
-.list-examples .item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
-}
-.list-examples .item:not(:nth-child(3n + 3)) {
-  margin-right: 30px;
+.list-examples .item {
+  flex-basis: calc((100% - 3 * 30px) / 3);
+  margin-top: 30px;
+  margin-left: 30px;
 }
